@@ -38,4 +38,20 @@
 
 #Use command to download binaries of sonarqube and then unzip it.
     #wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.4.0.54424.zip
-    #unzip * 
+    #unzip *
+
+#Will grant some permjssions
+    #chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
+    #chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
+    #cd sonarqube-9.4.0.54424/bin/linux-x86-64/
+    #./sonar.sh start
+
+#*Sonarqube will start on the server port 9000
+
+#Maven is connected with docker we have to connect sonarqube with jenkins
+    # sonarqube > my account > security > generate Token by the name Jenkins
+
+#After genrating Token copy the code and then open jenkins 
+   #jenkins  >  Dashboard > Manage Jenkins >    #Crendentials > System > Global Credentials and then create crentials. 
+
+#will install docker to the EC2 Instance
