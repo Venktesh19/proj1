@@ -1,8 +1,8 @@
-*Clone the given repository to your local by using the code.
+#Clone the given repository to your local by using the code.
 
 #Run commands to Install Java
-    #dnf update
-    #yum install java-11-openjdk-devel
+    *dnf update
+    *yum install java-11-openjdk-devel
 
 #Install Jenkins
     #https://pkg.jenkins.io/redhat-stable/
