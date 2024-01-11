@@ -2,6 +2,7 @@
 
 #Run commands to Install Java
     *dnf update
+    <br>
     *yum install java-11-openjdk-devel
 
 #Install Jenkins
