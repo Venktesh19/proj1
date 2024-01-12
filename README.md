@@ -69,8 +69,7 @@
     # sonarqube > my account > security > generate Token by the name Jenkins
 
 #After genrating Token copy the code and then open jenkins
-   <br>
-   #jenkins  >  Dashboard > Manage Jenkins > Crendentials > System > Global Credentials and then create crentials.
+   <br>   #jenkins  >  Dashboard > Manage Jenkins > Crendentials > System > Global Credentials and then create crentials.
 
 #To restart sonarqube
 <br>
@@ -80,3 +79,27 @@ open server created by adduser sonarqube , then  ls and open the directory in th
 
 
 #will install docker to the EC2 Instance
+<br>
+To remove existing containers 
+sudo apt remove --purge docker docker-engine docker.io containerd runc
+
+For CentOS:
+<br>
+sudo yum install -y yum-utils
+<br>
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+<br>
+sudo yum install docker-ce docker-ce-cli containerd.io
+<br>
+sudo systemctl start docker
+<br>
+sudo systemctl enable docker
+
+#whenever any kubernates controler is  used first install all the tools by using kuberbnates controllers. 
+<br>
+#How to install mikube. 
+#https://phoenixnap.com/kb/install-minikube-on-centos
+
+#Install kubernates operatore from operatorhub.io
+For Example 
+Argo CD > Install > Follow steps
